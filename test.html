@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>File Test</h1>
+  <p>Check if loader.js exists:</p>
+  <script>
+    fetch('Build/WebGL-Build.loader.js')
+      .then(response => {
+        if(response.ok) {
+          document.write('✅ loader.js FOUND');
+        } else {
+          document.write('❌ loader.js NOT FOUND');
+        }
+      });
+  </script>
+</body>
+</html>
